@@ -22,4 +22,13 @@ public class Hotel {
         this.bookedSuites = bookedSuites;
         this.bookedBasicRooms = bookedBasicRooms;
     }
+
+    public int getAvailableSuites(){
+        return numberOfSuites - bookedSuites;
+    }
+
+    public int getAvailableRooms(){
+        return  numberOfRooms - bookedBasicRooms;
+    }
+
 }
